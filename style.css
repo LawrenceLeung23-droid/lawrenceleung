@@ -2,16 +2,66 @@
 
 html {
   font-family: 'JetBrains Mono', monospace;
+  background-color: black;
+  color: white
 }
 
 /* h1 - 48px Bold JetBrains Mono */
 
+header {
+  position: sticky;
+  top: 0;
+}
+
 .nav {
-  background-color: powderblue;
+  background-color: black;
   display: flex;
   justify-content: space-around;
 }
 
-.note {
-  background-color: greenyellow;
+.nav-content-left {
+  display: flex;
+  flex-direction: column;
+  padding: 20px
+}
+
+.nav-content-right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-text {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-introduction {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  padding-top: 25vh;
+
+  text-align: left;
+  max-width: 448px;
+  min-width: auto;
+  height: 100vh;  
+  align-self: center;
+}
+
+.text-content {
+  text-align: left;
+  max-width: 448px;
+  min-width: auto;
+  align-self: center;
+}
+
+/* bolded orange */
+b1 {
+  color: #FF8B5A;
 }
