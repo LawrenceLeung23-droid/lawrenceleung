@@ -15,6 +15,7 @@
             <b> UX/UI Designer </b> 
         </div>
         
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
         <div class="nav-content-right">
             <a class="nav-text" href="index.html">Home </a>
             <a class="nav-text" href="about.html">About</a>
@@ -82,13 +83,11 @@
     </div>
 
 
-    <!-- <script>
-        window.addEventListener("scroll", function() {
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                window.location.href = "content1.html"; // Change this to your target page
-            }
-        });
-    </script> -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-content-right").classList.toggle("active");
+        }
+    </script>
     
 </body>
 </html>
