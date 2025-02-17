@@ -16,6 +16,11 @@ body {
   
 h1 {
     font-size: 96px;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
 }
 
 p1 {
@@ -41,20 +46,13 @@ font-size: 24px;
 
 
     /* background-color: red; */
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 
 
-.text-introduction {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-top: 10%;
 
-
-}
 .nav-content-left {
 color: #0E4A28;
 }
@@ -86,6 +84,52 @@ transition: width 0.2s ease-in-out;
 width: 100%;
 }
 
+.primary-button {
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    font-size: medium;
+    color: #0E4A28;
+    text-decoration: none;
+    border-color: #0E4A28;
+    border-width: 2px;
+    padding: 8px 8px;
+    max-width: 264px;
+    min-height: 60px;
+  }
+
+.primary-button:active {
+    border-style: outset;
+}
+  
+.primary-button:hover {
+    background-color: #0E4A28;
+    transition: 0.2s;
+    color: #f8F3E9;
+}
+
+
+.text-introduction {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 15%;
+    gap: 20px;
+    width: 800px;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+
+.text-content {
+    width: 300px;
+    /* background-color: red; */
+}
+
 
 @media (max-width: 768px) {
 
@@ -97,6 +141,9 @@ body {
     padding-right: 16px;
 }
 
+.nav-content-left {
+    display: none;
+}
 
 .nav-content-right {
     display: none;
