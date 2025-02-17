@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+html {
+    font-family: 'Lato', sans-serif;
+    background-color: #f8F3E9;
+    color: #0E4A28;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+p1 {
+    font-size: x-large;
+}
+
+header {
+position: sticky;
+top: 0;
+}
+
+.hamburger {
+display: none;
+cursor: pointer;
+font-size: 24px;
+}
+
+.nav {
+    background-color: #f8F3E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+
+
+    /* background-color: red; */
+    padding: 16px;
+}
+
+.nav-content-left {
+/* display: flex; */
+/* flex-direction: column; */
+/* padding-left: 15%; */
+color: #0E4A28;
+}
+
+.nav-content-right {
+display: flex;
+gap: 40px;
+/* align-items: center; */
+/* padding-right: 15%; */
+}
+
+.nav-text {
+text-decoration: none;
+display: inline-block;
+position: relative;
+color: #0E4A28;
+}
+
+.nav-text::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -2px;
+width: 0;
+height: 2px;
+background-color: #0E4A28;
+transition: width 0.2s ease-in-out;
+}
+
+.nav-text:hover::after {
+width: 100%;
+}
+
+.text-introduction {
+    width: 1200px;
+    /* height: 100vh; */
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: yellow; */
+    padding: 16px;
+}
+
+@media (max-width: 768px) {
+.nav-content-right {
+    display: none;
+    flex-direction: column;
+    background-color: red;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+}
+.nav-content-left {
+    padding: 0%;
+}
+.nav-content-right.active {
+    display: flex;
+}
+.hamburger {
+    display: block;
+}
+}
