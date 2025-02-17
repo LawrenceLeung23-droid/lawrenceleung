@@ -50,28 +50,18 @@ font-size: 24px;
 .text-introduction {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     text-align: left;
-    /* height: 100vh; */
-    /* max-width: 768px; */
     margin-top: 10%;
-    /* align-self: center; */
-    /* background-color: yellow; */
-    /* padding: 16px; */
+
 
 }
 .nav-content-left {
-/* display: flex; */
-/* flex-direction: column; */
-/* padding-left: 15%; */
 color: #0E4A28;
 }
 
 .nav-content-right {
 display: flex;
 gap: 40px;
-/* align-items: center; */
-/* padding-right: 15%; */
 }
 
 .nav-text {
@@ -98,6 +88,15 @@ width: 100%;
 
 
 @media (max-width: 768px) {
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
 
 .nav-content-right {
     display: none;
