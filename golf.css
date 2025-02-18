@@ -19,6 +19,23 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text-description {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
 h3 {
     margin: 0;
 }
@@ -87,14 +104,16 @@ width: 100%;
 .primary-button {
     background-color: transparent;
     font-family: 'Lato', sans-serif;
-    font-size: medium;
+    font-size: 16px;
+    font-weight: 400;
     color: #0E4A28;
     text-decoration: none;
     border-color: #0E4A28;
     border-width: 2px;
-    padding: 8px 8px;
-    max-width: 264px;
+    /* padding: 8px 8px; */
+    max-width: 263px;
     min-height: 60px;
+    border-radius: 100px;
   }
 
 .primary-button:active {
@@ -120,14 +139,27 @@ width: 100%;
 
 .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 96px
+    /* justify-content: space-between; */
     /* background-color: yellow; */
 }
 
 .text-content {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+    /* width: 300px; */
+    /* background-color: yellow; */
+
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     /* background-color: red; */
+    height: 340px;
 }
 
 
