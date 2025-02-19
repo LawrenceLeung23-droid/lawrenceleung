@@ -249,7 +249,11 @@ body {
 
 .img-container {
     height: 100%;
+    width: 100%;
 }
 
 
+.text-content {
+    width: 100%;
+}
 }
