@@ -50,8 +50,8 @@ top: 0;
 }
 
 .mobile-nav {
-display: none;
-cursor: pointer;
+    display: none;
+    cursor: pointer;
 }
 
 .nav {
@@ -201,14 +201,8 @@ width: 100%;
 
 @media (max-width: 768px) {
 
-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-
-}
-
 .nav {
+    /* background-color: red; */
     padding-left: 0;
     padding-right: 0;
 }
@@ -243,7 +237,7 @@ body {
 .mobile-nav {
     display: block;
     width: 100%;
-    /* font-size: 16px; */
+    /* font-size: 12px; */
 
 }
 
@@ -280,3 +274,4 @@ body {
     width: 100%;
 }
 }
+
