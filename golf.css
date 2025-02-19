@@ -177,6 +177,9 @@ width: 100%;
     width: 50%;
 }
 
+
+
+
 @media (max-width: 768px) {
 
 body {
@@ -236,14 +239,12 @@ body {
 
 .nav {
     display: flex;
-    /* justify-content: center; */
 }
 
 .content-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* background-color: red; */
     height: 600px;
 }
 
