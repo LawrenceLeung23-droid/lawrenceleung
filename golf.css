@@ -62,6 +62,7 @@ font-size: 24px;
     padding-top: 32px;
     padding-bottom: 32px;
 
+    
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -153,15 +154,16 @@ width: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 560px;
+    width: 50%;
 
 }
 
 .content-container {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
     /* background-color: red; */
+    justify-content: space-between;
     height: 340px;
 }
 
@@ -172,7 +174,7 @@ width: 100%;
 
 .img-container {
     background-color: gray;
-    width: 560px;
+    width: 50%;
 }
 
 @media (max-width: 768px) {
