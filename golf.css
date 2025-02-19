@@ -52,7 +52,6 @@ top: 0;
 .mobile-nav {
 display: none;
 cursor: pointer;
-font-size: 24px;
 }
 
 .nav {
@@ -114,7 +113,27 @@ width: 100%;
     max-width: 263px;
     min-height: 60px;
     border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* Style the arrow inside the button */
+.arrow {
+    font-size: 24px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* On hover, rotate the arrow 90 degrees to point down */
+  .primary-button:hover .arrow {
+    transform: rotate(45deg);
+  }
+  
+  /* Optional: Change the background color of the button on hover */
+  .primary-button:hover {
+    background-color: #0056b3;
+  }
 
 #smaller-button {
     width: 144px;
@@ -224,6 +243,8 @@ body {
 .mobile-nav {
     display: block;
     width: 100%;
+    /* font-size: 16px; */
+
 }
 
 .nav-text {
@@ -233,6 +254,7 @@ body {
 #mobile-centre-text {
     color: #0E4A28;
     position: absolute;
+    /* font-size: 16px; */
     left: 50%;
     transform: translateX(-50%);
 }
